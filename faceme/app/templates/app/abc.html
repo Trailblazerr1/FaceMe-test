@@ -1,0 +1,315 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook dashboard</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+ 
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<style >
+  .popup {
+    margin: 0 auto;
+width: 400px;
+  }
+h1,p {
+font-family: 'Shadows Into Light', cursive;
+
+}
+div{
+        font-family: 'Tangerine', serif;
+}
+</style>
+</head>
+<body class="application">
+<!-- ============================================================================================================ -->
+<div>
+<p> What's on your facebook :)</p>
+<!-- =============================================================================================  -->
+<h1> All rubbish of ur timeline in a donut</h1>
+
+<div id="pie"></div>
+<hr size="1" />
+
+<script src="http://d3pie.org/website/libs/d3.min.js"></script>
+<script src="http://d3pie.org/d3pie/d3pie.js"></script>
+
+<script>
+d3.json("{% url "timelinejson" %}", function(error, data) {
+  var pie = new d3pie("pie", {
+    header: {
+      title: {
+        text: "Facebook timeline activities"
+      },
+      location: "pie-center"
+    },
+    size: {
+      pieInnerRadius: "80%"
+    },
+    data: {
+      sortOrder: "label-asc",
+      content:data
+    }
+  });
+});
+</script>
+</div>
+
+<!-- =====================================================================================================  -->
+<div>
+<p>
+  </p>
+
+<div id="pie"></div>
+
+<script src="http://d3pie.org/website/libs/d3.min.js"></script>
+<script src="http://d3pie.org/d3pie/d3pie.js"></script>
+
+<script>
+d3.json("{% url "catchjson0" %}", function(error, data) {
+  
+  var pie = new d3pie("pie", {
+    header: {
+      title: {
+        text: "All your shit year-wise!!",
+        fontSize: 30
+      }
+    },
+    data: {
+      content:data
+    }
+    
+  });
+});
+</script>
+</div>
+
+<div>
+<h1>
+  </h1>
+
+<div id="pie"></div>
+
+<script src="http://d3pie.org/website/libs/d3.min.js"></script>
+<script src="http://d3pie.org/d3pie/d3pie.js"></script>
+
+<script>
+d3.json("{% url "catchjson1" %}", function(error, data) {
+  
+  var pie = new d3pie("pie", {
+    header: {
+      title: {
+        text: "Count your most wasted hours ",
+        fontSize: 30
+      }
+    },
+    data: {
+      content:data
+    }
+    
+  });
+});
+</script>
+</div>
+
+
+<div>
+<h1>
+  </h1>
+
+<div id="pie"></div>
+
+<script src="http://d3pie.org/website/libs/d3.min.js"></script>
+<script src="http://d3pie.org/d3pie/d3pie.js"></script>
+
+<script>
+d3.json("{% url "catchjson2" %}", function(error, data) {
+  
+  var pie = new d3pie("pie", {
+    header: {
+      title: {
+        text: "Count your most wasted months ",
+        fontSize: 30
+      }
+    },
+    data: {
+      content:data
+    }
+    
+  });
+});
+</script>
+</div>
+<div>
+<h1>
+  </h1>
+
+<hr size="1" />
+<div id="pie"></div>
+
+<script src="http://d3pie.org/website/libs/d3.min.js"></script>
+<script src="http://d3pie.org/d3pie/d3pie.js"></script>
+
+<script>
+d3.json("{% url "catchjson3" %}", function(error, data) {
+  
+  var pie = new d3pie("pie", {
+    header: {
+      title: {
+        text: "How precisely fb wasted your days yet!!",
+        fontSize: 30
+      }
+    },
+    data: {
+      content:data
+    }
+    
+  });
+});
+</script>
+</div>
+ <!-- =================================================================================================== -->
+<div class="popup">
+  {% for i in js1 %}
+   {% for key,value in i.items %}
+      <p>{{ value }}</p>
+   {% endfor %}
+  {% endfor %}
+</div>
+<hr size="1" />
+
+<!-- =================================================================================================  -->
+<div class="popup">
+<h2>Who loves u the most</h2>>
+{% for i in ids %}
+  <a href="{{ i }}" class="image"><img src="{{ i }}" alt="My image"/></a>
+{% endfor %}
+{% for i in js0 %}
+  
+      <p>{{ i.name }} :</p>
+      <p>{{ i.likes }}</p>
+      <br>
+{% endfor %}
+
+</div>
+<div>
+<h1>World cloud for ur timeline</h1>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+  <script>
+
+//Simple animated example of d3-cloud - https://github.com/jasondavies/d3-cloud
+//Based on https://github.com/jasondavies/d3-cloud/blob/master/examples/simple.html
+
+// Encapsulate the word cloud functionality
+function wordCloud(selector) {
+
+    var fill = d3.scale.category20();
+
+    //Construct the word cloud's SVG element
+    var svg = d3.select(selector).append("svg")
+        .attr("width", 500)
+        .attr("height", 500)
+        .append("g")
+        .attr("transform", "translate(250,250)");
+
+
+    //Draw the word cloud
+    function draw(words) {
+        var cloud = svg.selectAll("g text")
+                        .data(words, function(d) { return d.text; })
+
+        //Entering words
+        cloud.enter()
+            .append("text")
+            .style("font-family", "Impact")
+            .style("fill", function(d, i) { return fill(i); })
+            .attr("text-anchor", "middle")
+            .attr('font-size', 1)
+            .text(function(d) { return d.text; });
+
+        //Entering and existing words
+        cloud
+            .transition()
+                .duration(600)
+                .style("font-size", function(d) { return d.size + "px"; })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .style("fill-opacity", 1);
+
+        //Exiting words
+        cloud.exit()
+            .transition()
+                .duration(200)
+                .style('fill-opacity', 1e-6)
+                .attr('font-size', 1)
+                .remove();
+    }
+
+
+    //Use the module pattern to encapsulate the visualisation code. We'll
+    // expose only the parts that need to be public.
+    return {
+
+        //Recompute the word cloud for a new set of words. This method will
+        // asycnhronously call draw when the layout has been computed.
+        //The outside world will need to call this function, so make it part
+        // of the wordCloud return value.
+        update: function(words) {
+            d3.layout.cloud().size([500, 500])
+                .words(words)
+                .padding(5)
+                .rotate(function() { return ~~(Math.random() * 2) * 90; })
+                .font("Impact")
+                .fontSize(function(d) { return d.size; })
+                .on("end", draw)
+                .start();
+        }
+    }
+
+}
+
+//Some sample data - http://en.wikiquote.org/wiki/Opening_lines
+d3.json("{% url "play_count_by_month" %} ", function(error, data) {
+words = data
+//Prepare one of the sample sentences by removing punctuation,
+// creating an array of words and computing a random size attribute.
+function getWords(i) {
+    return words[i]
+            .replace(/[!\.,:;\?]/g, '')
+            .split(' ')
+            .map(function(d) {
+                return {text: d, size: 10 + Math.random() * 60};
+            })
+}
+
+//This method tells the word cloud to redraw with a new set of words.
+//In reality the new words would probably come from a server request,
+// user input or some other source.
+function showNewWords(vis, i) {
+    i = i || 0;
+
+    vis.update(getWords(i ++ % words.length))
+    setTimeout(function() { showNewWords(vis, i + 1)}, 2000)
+}
+
+//Create a new instance of the word cloud visualisation.
+var myWordCloud = wordCloud('body');
+
+//Start cycling through the demo data
+showNewWords(myWordCloud);
+
+});
+</script>
+</div>
+
+  <script>
+    Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+  </script>
+
+
+</body>
+</html>
