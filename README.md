@@ -5,7 +5,11 @@
 Shows you some interesting visualizations of your facebook account.
 
 ## Producing locally  
-Clone the repo.  
-pip install -r requirements.txt.  
+- Clone the repo.  
+- pip install -r requirements.txt.   
+- python3 manage.py makemigrations.  
+- python3 manage.py migrate.  
+- python3 manage.py runserver.
 
+     
 Made with love by: Django, d3.js, postgreSQL,fb graph api  
