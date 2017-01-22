@@ -61,4 +61,4 @@ You now have a working  environment!
 
 The data provided here is mock-data and it doesn't communicates with fb in realtime.For further info see [this](https://github.com/Trailblazerr1/FaceMe).   
      
-Made with love by: Django, d3.js, postgreSQL,fb graph api
+**Made with love by**: Django, d3.js, postgreSQL,facebook graph api
