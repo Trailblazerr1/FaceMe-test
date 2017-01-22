@@ -49,7 +49,9 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
     Django version 1.10.1, using settings 'faceme.settings'
 	Starting development server at http://127.0.0.1:8000/
 	Quit the server with CONTROL-C.
-```
+```    
+6. Now skim over to [127.0.0.1:8000/data/graph](127.0.0.1:8000/data/graph/) in your favourite browser.
+
 
 The data provided here is mock-data and it doesn't communicates with fb in realtime.For further info see [this](https://github.com/Trailblazerr1/FaceMe).   
      
