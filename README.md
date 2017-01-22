@@ -56,6 +56,8 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
     
     in your favourite browser.
 
+You now have a working  environment!
+
 
 The data provided here is mock-data and it doesn't communicates with fb in realtime.For further info see [this](https://github.com/Trailblazerr1/FaceMe).   
      
