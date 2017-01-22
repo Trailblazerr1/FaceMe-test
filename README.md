@@ -12,7 +12,8 @@ Getting a working local copy of website requires a few steps: getting a copy of 
   
 You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is installed on Ubuntu 16.04 by default. You can verify that by running the command _python3 --version_ in a terminal.
 
-- Ensure that you have _python3_ and _pip_ installed.   
+1.  Setup a _FaceMe_ folder to store everything:  
+
 - Clone the repo by _git clone https://github.com/Trailblazerr1/FaceMe-test.git_.  
 - pip3 install -r requirements.txt.  
 - Change to directory which has manage.py.
