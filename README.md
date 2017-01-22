@@ -51,6 +51,7 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 6. Now skim over to     
 
 	[127.0.0.1:8000/data/graph](127.0.0.1:8000/data/graph/)
+    
 	in your favourite browser.  
     
 You now have a working  environment!
