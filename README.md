@@ -13,8 +13,8 @@ Getting a working local copy of website requires a few steps: getting a copy of 
 You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is installed on Ubuntu 16.04 by default. You can verify that by running the command _python3 --version_ in a terminal.
 
 1.  Setup a _FaceMe_ folder to store everything:  
-	```python
-    $ mkdir Faceme
+	```
+    $ mkdir Faceme     
     $ cd Faceme
     ```
 2.  Get a copy of the site's code by running a _git clone_:
