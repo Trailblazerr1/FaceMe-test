@@ -12,9 +12,9 @@ Getting a working local copy of website requires a few steps: getting a copy of 
   
 You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is installed on Ubuntu 16.04 by default. You can verify that by running the command _python3 --version_ in a terminal.
 
-1.  Setup a _FaceMe_ folder to store everything:  
+1.  Setup a _project_ folder to store everything:  
 	```
-    $ mkdir Faceme     
+    $ mkdir project     
       
     $ cd Faceme
     ```
@@ -22,16 +22,34 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 
 	```
     $ git clone https://github.com/Trailblazerr1/FaceMe-test.git      
-    ```  
-3.  Now install all the dependencies:    
+    ```
+3.  Now install all the dependencies:  
+
 	```
-    pip3 install -r requirements.txt
-  	```
-- Change to directory which has manage.py.
-- _python3 manage.py makemigrations_ (This might throw an error, keep going).  
-- _python3 manage.py migrate_ (This might throw an error, keep going).  
-- _python3 manage.py runserver_.
-- Go to [127.0.0.1:8000/data/graph](127.0.0.1:8000/data/graph) 
+    $ cd FaceMe-test
+    $ pip3 install -r requirements.txt
+```
+	If it throws error try installing pip by:
+    ```
+    $ sudo apt-get install python3-pip
+```
+4. Lastly sync the models by:
+
+``` 
+	$ cd faceme
+    $ python3 manage.py makemigrations
+    $ python3 manage.py migrate
+    $ python3 manage.py runserver
+ ```
+ 	second and third commands might throw a _key error_, don't worry, keep going
+5. Now the terminal should end up looking like this:
+```
+	Performing system checks...
+	System check identified no issues (0 silenced).
+    Django version 1.10.1, using settings 'faceme.settings'
+	Starting development server at http://127.0.0.1:8000/
+	Quit the server with CONTROL-C.
+```
 
 The data provided here is mock-data and it doesn't communicates with fb in realtime.For further info see [this](https://github.com/Trailblazerr1/FaceMe).   
      
