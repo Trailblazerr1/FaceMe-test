@@ -35,8 +35,8 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 
 	``` 
 	$ cd faceme
-    $ python3 manage.py makemigrations
-    $ python3 manage.py migrate
+    $ python3 manage.py makemigrations  (It might throw a key error, keep going)      
+    $ python3 manage.py migrate         (It might also throw a key error, keep going)     
     $ python3 manage.py runserver
  ```
 5. Now the terminal should end up looking like this:
