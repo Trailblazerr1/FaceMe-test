@@ -4,7 +4,14 @@
 ## What it does
 Shows you some interesting visualizations of your facebook account.
 
+## For contribution 
+
+
 ## Producing locally  
+Getting a working local copy of website requires a few steps: getting a copy of the site's code, and then adding lots of dependencies.  
+  
+You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is installed on Ubuntu 16.04 by default. You can verify that by running the command _python3 --version_ in a terminal.
+
 - Ensure that you have _python3_ and _pip_ installed.   
 - Clone the repo by _git clone https://github.com/Trailblazerr1/FaceMe-test.git_.  
 - pip3 install -r requirements.txt.  
