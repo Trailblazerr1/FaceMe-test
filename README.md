@@ -23,7 +23,10 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 	```
     $ git clone https://github.com/Trailblazerr1/FaceMe-test.git      
     ```  
-- pip3 install -r requirements.txt.  
+3.  Now install all the dependencies:    
+	```
+    pip3 install -r requirements.txt
+  	```
 - Change to directory which has manage.py.
 - _python3 manage.py makemigrations_ (This might throw an error, keep going).  
 - _python3 manage.py migrate_ (This might throw an error, keep going).  
