@@ -60,12 +60,14 @@ You now have a working  environment!
 
   If its your first contribution ever, grab the motivation from [this](https://github.com/pybee/batavia/wiki/Your-first-Batavia-contribution) awesome article.     
 
-   See [issues](https://github.com/Trailblazerr1/FaceMe-test/issues)
+   The look out for [issues](https://github.com/Trailblazerr1/FaceMe-test/issues)
    
    If you chose to change the front-end of website the code is [here](https://github.com/Trailblazerr1/FaceMe-test/blob/master/faceme/app/templates/app/abc.html)
    
    And if you are contributing to backend, you should be knowing where to find things   
    
+
+
 
 The data provided here is mock-data and it doesn't communicates with fb in realtime.For further info see [this](https://github.com/Trailblazerr1/FaceMe).   
      
