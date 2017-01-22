@@ -40,8 +40,7 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
     $ python3 manage.py makemigrations
     $ python3 manage.py migrate
     $ python3 manage.py runserver
- ```      
- 	second and third commands might throw a _key error_, don't worry, keep going
+ ```      	
 5. Now the terminal should end up looking like this:
 ```
 	Performing system checks...
