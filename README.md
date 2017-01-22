@@ -57,7 +57,14 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 You now have a working  environment!
 
 ## For contribution 
+
+  If its your first contribution ever, grab the motivation from [this](https://github.com/pybee/batavia/wiki/Your-first-Batavia-contribution) awesome article.     
+
    See [issues](https://github.com/Trailblazerr1/FaceMe-test/issues)
+   
+   If you chose to change the front-end of website the code is [here](https://github.com/Trailblazerr1/FaceMe-test/blob/master/faceme/app/templates/app/abc.html)
+   And if you are contributing to backend, you should know where to find things   
+   
 
 The data provided here is mock-data and it doesn't communicates with fb in realtime.For further info see [this](https://github.com/Trailblazerr1/FaceMe).   
      
