@@ -4,8 +4,6 @@
 ## What it does
 Shows you some interesting visualizations of your facebook account.
 
-## For contribution 
-
 
 ## Producing locally  
 Getting a working local copy of website requires a few steps: getting a copy of the site's code, and then adding lots of dependencies.  
@@ -52,13 +50,12 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 ```
 6. Now skim over to     
 
-	[127.0.0.1:8000/data/graph](127.0.0.1:8000/data/graph/)    
-    
-    in your favourite browser.
-
+	[127.0.0.1:8000/data/graph](127.0.0.1:8000/data/graph/)
+	in your favourite browser.
 You now have a working  environment!
 
-
+## For contribution 
+   See [issues](https://github.com/Trailblazerr1/FaceMe-test/issues)
 
 The data provided here is mock-data and it doesn't communicates with fb in realtime.For further info see [this](https://github.com/Trailblazerr1/FaceMe).   
      
