@@ -19,9 +19,9 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
     $ cd Faceme
     ```
 2.  Get a copy of the site's code by running a _git clone_:
-	~~~
-    $ git clone https://github.com/Trailblazerr1/FaceMe-test.git_
-    ~~~  
+	```
+    $ git clone https://github.com/Trailblazerr1/FaceMe-test.git_      
+    ```  
 - pip3 install -r requirements.txt.  
 - Change to directory which has manage.py.
 - _python3 manage.py makemigrations_ (This might throw an error, keep going).  
