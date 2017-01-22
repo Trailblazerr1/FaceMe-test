@@ -35,7 +35,7 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 ```
 4. Lastly sync the models by:
 
-``` 
+	``` 
 	$ cd faceme
     $ python3 manage.py makemigrations
     $ python3 manage.py migrate
@@ -43,7 +43,7 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
  ```
 5. Now the terminal should end up looking like this:
 
-```
+	```
 	Performing system checks...
 	System check identified no issues (0 silenced).
     Django version 1.10.1, using settings 'faceme.settings'
