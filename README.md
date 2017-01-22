@@ -16,7 +16,7 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
 	```
     $ mkdir project     
       
-    $ cd Faceme
+    $ cd project
     ```
 2.  Get a copy of the site's code by running a _git clone_:         
 
