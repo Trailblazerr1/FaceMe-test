@@ -36,12 +36,13 @@ input{
 input[type="submit"]{
 	height: 35px;
 	padding-right: 15px;
-	margin-top: 30px;
+	margin-top: 10px;
 	background-color: #FFC107;
 	border: none;
 	color: #FFF;
 	border-radius: 4px;
 	border-bottom: 4px solid #FFB300;
+	margin-left: 340px;
 }
 input[type="text"]{
 	margin-top: 45px;
@@ -65,4 +66,10 @@ input[type="password"]{
 p,a{
 	color: #FFF;
 	margin-top: -10px;
+}
+.fbb{
+	margin-top: 05px;
+	padding-top: 20px;
+	width: 12em;
+	height: 2.5em;
 }
