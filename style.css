@@ -1,0 +1,75 @@
+
+body{
+	margin: 0 auto;
+	background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/06/Facebook-Wallpapers.jpg"); 
+	background-size: 100% 720px;
+	background-repeat: no-repeat;
+}
+.container{
+	margin: 0 auto;
+	background-color: #009688;
+	opacity: 0.9;
+	width: 450px;
+	height: 300px;
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 100px;
+
+}
+input{
+	background-color: #FFF;
+	margin: 0 auto;
+	margin-top: 35px;
+	margin-bottom: 30px;
+	padding: 5px;
+	height: 25px;
+	padding-left: 16px;
+	border: none;
+
+}
+#icon{
+	height: 100px;
+	width: 100px;
+	margin-top: -50px;
+	margin-bottom: -25px;
+}
+input[type="submit"]{
+	height: 35px;
+	padding-right: 15px;
+	margin-top: 10px;
+	background-color: #FFC107;
+	border: none;
+	color: #FFF;
+	border-radius: 4px;
+	border-bottom: 4px solid #FFB300;
+	margin-left: 340px;
+}
+input[type="text"]{
+	margin-top: 45px;
+	background-image: url("https://answers.atlassian.com/images/icons/profilepics/default.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+div.form-input{
+	height: 70px;
+}
+input[type="password"]{
+	margin-top: 40px;
+	background-image: url("http://2.bp.blogspot.com/-ENJwau760LE/VnwTQYFz5CI/AAAAAAAABnM/_syY_JkxrIs/s1600/unnamed%2B%25282%2529.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+
+
+}
+p,a{
+	color: #FFF;
+	margin-top: -10px;
+}
+.fbb{
+	margin-top: 05px;
+	padding-top: 20px;
+	width: 12em;
+	height: 2.5em;
+}
