@@ -56,7 +56,7 @@ You’ll need to have Python 3.5 available for code to work. Python 3.5.1 is ins
     
 You now have a working  environment!
 
-## For contribution 
+## For contribution in project
 
   If its your first contribution ever, grab the motivation from [this](https://github.com/pybee/batavia/wiki/Your-first-Batavia-contribution) awesome article.     
 
